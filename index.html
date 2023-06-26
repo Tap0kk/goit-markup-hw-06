@@ -24,7 +24,8 @@
 
   <body>
     <!-- header -->
-    <!-- <header class="header">
+
+    <header class="header">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="logo link" href="./index.html"
@@ -54,12 +55,108 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu-btn" type="button" data-menu-open>
+          <svg width="32" height="22" class="open-btn-icon">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu-top">
+          <button class="close-menu-btn" type="button" data-menu-close>
+            <svg width="8" height="8" class="close-btn-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li>
+              <a class="mob-menu-link active link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="mob-menu-link link" href="">Contacts</a></li>
+          </ul>
+        </div>
+
+        <div class="mob-menu-bot">
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list list">
+              <li>
+                <a class="mob-contacts-tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mob-contacts-email link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mob-soc-list">
+            <li class="mob-soc-item list">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="no-referrer noopener"
+                ><svg width="16" height="16" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item list">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="no-referrer noopener"
+                ><svg width="16" height="16" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item list">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="no-referrer noopener"
+                ><svg width="16" height="16" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item list">
+              <a
+                class="mob-soc-link"
+                href=""
+                target="_blank"
+                rel="no-referrer noopener"
+                ><svg width="16" height="16" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <!-- main -->
+
     <main>
       <!-- hero -->
+
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -70,6 +167,7 @@
       </section>
 
       <!-- our qualities -->
+
       <section class="qualities">
         <div class="container">
           <h2 class="visually-hidden">Our qualities</h2>
@@ -127,6 +225,7 @@
       </section>
 
       <!-- What are we doing -->
+
       <section class="our-work">
         <div class="container">
           <h2 class="work-title">What are we doing</h2>
@@ -160,6 +259,7 @@
       </section>
 
       <!-- our team -->
+
       <section class="our-team">
         <div class="team-container container">
           <h2 class="team-title">Our Team</h2>
@@ -401,6 +501,7 @@
       </section>
 
       <!-- customers -->
+
       <section class="customers">
         <div class="container customers-container">
           <h2 class="customers-title">Customers</h2>
@@ -453,6 +554,7 @@
     </main>
 
     <!-- footer -->
+
     <footer class="footer">
       <div class="footer-container container">
         <div class="footer-desc">
@@ -536,6 +638,7 @@
     </footer>
 
     <!-- modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
@@ -617,5 +720,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
