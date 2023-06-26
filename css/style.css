@@ -482,8 +482,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand);
-  /* margin-right: 76px; */
-  /* display: inline-block; */
   margin-bottom: 17.5px;
 }
 .logo-part-footer {
