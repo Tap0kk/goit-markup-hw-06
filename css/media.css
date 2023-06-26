@@ -2,6 +2,12 @@
   .container {
     max-width: 428px;
   }
+  .mob-contacts-tel {
+    font-size: 36px;
+  }
+  .mob-soc-list {
+    gap: 56px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -30,7 +36,6 @@
     color: var(--dark);
     padding: 24px 0;
     transition: color var(--transition);
-    /* margin-right: 121px; */
   }
   .active {
     position: relative;

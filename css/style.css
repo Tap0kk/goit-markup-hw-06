@@ -170,7 +170,7 @@ img {
   color: var(--pressed-state);
 }
 .mob-contacts-tel {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
@@ -194,7 +194,7 @@ img {
 
 .mob-soc-list {
   display: flex;
-  gap: 56px;
+  gap: 30px;
   justify-content: center;
   margin: 0;
 }
