@@ -1,0 +1,122 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 396px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .qualities-title {
+    text-align: unset;
+  }
+  .qualities-list {
+    gap: 72px 24px;
+  }
+  .qualities-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .team-container {
+    max-width: 584px;
+  }
+  .team-list {
+    gap: 64px 24px;
+  }
+  .customers-container {
+    max-width: 584px;
+  }
+  .customers-list {
+    gap: 72px 24px;
+  }
+  .customers-item {
+    width: calc((100% - 48px) / 3);
+  }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: unset;
+    justify-content: unset;
+    gap: 72px 24px;
+    max-width: 584px;
+  }
+  .logo-footer {
+    justify-content: left;
+  }
+  .footer-social-text {
+    text-align: left;
+  }
+  .subscribe-title {
+    text-align: left;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+  .qualities {
+    padding: 120px 0;
+  }
+  .qualities-list {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+  .qualities-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .qualities-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264;
+    height: 112px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qualities-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+  }
+  .qualities-list-text {
+    font-weight: 400;
+    color: var(--text);
+  }
+  .our-work {
+    display: block;
+  }
+  .our-team {
+    padding: 120px 0;
+  }
+  .team-list {
+    flex-wrap: nowrap;
+  }
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+  .footer-desc {
+    margin-right: 120px;
+  }
+  .footer-text {
+    width: 264px;
+  }
+  .footer-social {
+    margin-right: 80px;
+  }
+}
