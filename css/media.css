@@ -1,11 +1,26 @@
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 396px;
+    max-width: 428px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab.jpg);
+  }
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    text-transform: none;
+    margin-bottom: 36px;
   }
   .qualities-title {
     text-align: unset;
@@ -59,6 +74,20 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-pc.jpg);
+    padding: 188px 0;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    margin-bottom: 48px;
   }
   .qualities {
     padding: 120px 0;
