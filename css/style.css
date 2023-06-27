@@ -110,6 +110,7 @@ img {
 .open-menu-btn {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .open-btn-icon {
   stroke: var(--dark);
@@ -121,6 +122,7 @@ img {
   border-radius: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #e7e9fc;
+  cursor: pointer;
 }
 .close-btn-icon {
   fill: var(--dark);
@@ -138,13 +140,18 @@ img {
   z-index: 2;
   padding: 24px 24px 40px 40px;
   display: flex;
+  gap: 40px;
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
   transition: visibility var(--transition), opacity var(--transition),
     transform var(--transition);
+  transform: translateX(0);
 }
 
+.mob-menu.is-hidden {
+  transform: translateX(100%);
+}
 .close-menu-btn {
   margin-left: auto;
   margin-bottom: 32px;
@@ -178,7 +185,7 @@ img {
   text-transform: capitalize;
   color: var(--primary-brand);
   font-style: normal;
-  margin-top: 20px
+  margin-top: 20px;
   margin-bottom: 40px;
   display: block;
 }
@@ -607,15 +614,15 @@ img {
 /* portfolo page */
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .btn-list {
   display: flex;
-  gap: 24px;
-  margin-bottom: 72px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 48px;
 }
 
 .filter-btn {
@@ -629,7 +636,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--primary-brand);
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border-radius: 4px;
   transition: background-color var(--transition), color var(--transition),
     box-shadow var(--transition), border-color var(--transition);
@@ -647,9 +654,8 @@ img {
 
 .portfolio-list {
   display: flex;
-  row-gap: 48px;
-  column-gap: 24px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .portfolio-link {
@@ -664,7 +670,6 @@ img {
 }
 
 .portfolio-card {
-  max-width: calc((100% - 48px) / 3);
   background: #ffffff;
 }
 .portfolio-container {
@@ -675,10 +680,19 @@ img {
 .card-title {
   text-align: start;
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--dark);
 }
 
 .card-text {
   text-align: start;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+  color: var(--text);
 }
 
 .portfolio-cover-block {
@@ -722,6 +736,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
   max-width: 408px;
+  width: calc(100% - 36px);
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
